@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 /**
- * @Description: TODO
+ * @Description: 支付serviceImpl
  * @Author: haibo.li
  * @Date: 2021/4/20 15:58
  */
@@ -62,11 +62,11 @@ public class PaymentServiceImpl implements PaymentService {
         Payment payment = paymentDao.getPaymentById(id);
         if (ObjectUtils.isEmpty(payment)) {
             returnMsg.setCode(200);
-            returnMsg.setMessage("查询成功,serverPort: " + serverPort);
+            returnMsg.setMessage("查询成功,但结果为空,哈哈哈,serverPort: " + serverPort);
             returnMsg.setData(payment);
         } else {
             returnMsg.setCode(200);
-            returnMsg.setMessage("查询成功,但结果为空，serverPort: " + serverPort);
+            returnMsg.setMessage("查询成功，serverPort: " + serverPort);
             returnMsg.setData(payment);
         }
         return returnMsg;
