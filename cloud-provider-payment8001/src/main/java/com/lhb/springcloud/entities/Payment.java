@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @Description: TODO
+ * @Description: 支付表实体类
  * @Author: haibo.li
  * @Date: 2021/4/20 15:43
  */
