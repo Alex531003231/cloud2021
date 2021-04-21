@@ -36,8 +36,8 @@ public class PaymentServiceImpl implements PaymentService {
     public CommonResult<Integer> create(Payment payment) {
         CommonResult<Integer> returnMsg = new CommonResult<>();
         int result = paymentDao.create(payment);
-        log.info("******插入结果：" + result);
         if (result > 0) {
+            log.info("******插入成功，哈哈哈哈：" + result);
             returnMsg.setCode(200);
             returnMsg.setMessage("插入数据库成功,serverPort: " + serverPort);
             returnMsg.setData(result);
